@@ -1,0 +1,48 @@
+.add-politic-form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.politic-form {
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.politic-form-el {
+  font-size: 14px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.politic-form > input {
+  height: 40px;
+  width: 60vw;
+}
+
+.politic-form > textarea {
+  height: 80px;
+  width: 60vw;
+}
+
+.send-politic-data {
+  height: 50px;
+  width: 200px;
+  font-size: 18px;
+  margin-top: auto;
+  margin-bottom: 20px;
+  align-self: center;
+  border-radius: 8px;
+  background-color: #23eac6;
+  transition: background-color 0.3s;
+}
+
+.send-politic-data:hover {
+  cursor: pointer;
+  background-color: #20ba9e;
+}/*# sourceMappingURL=AddPolitic.css.map */

@@ -1,0 +1,133 @@
+@use './utilities/index' as *;
+
+.link{
+	text-decoration: none;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	height: 12%;
+	min-height: 80px;
+	width: 100%;
+	min-width: 800px;
+	display: flex;
+	align-items: center;
+	background-color: $main-white-bg;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	z-index: 10;
+}
+
+.profile-picture {
+	height: 60px;
+	width: 60px;
+	border-radius: 60px;
+}
+
+.profile-picture-link {
+	position: relative;
+	left: 30px;
+}
+
+.profile-picture:hover {
+	box-shadow: 24px rgba(0, 0, 0, 0.25);
+}
+
+.account-info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 30px;
+	margin-left: 15px;
+	padding: 10px;
+	border: solid 1px $gray;
+	border-radius: 8px;
+	transition: background-color 0.3s, border-radius 0.3s;
+}
+
+.account-info:hover {
+	cursor: pointer;
+	background-color: $light-gray;
+}
+
+.account-name {
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+.dropdown-container {
+	position: absolute;
+	height: 30px;
+	left: 90px;
+}
+
+.logo {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	height: 40px;
+	margin: 0 20px;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+.search-engine-btn-margin{
+	margin-left: auto;
+}
+
+.search-engine-btn-container {
+	display: flex;
+	align-items: center;
+	height: 30px;
+	padding: 10px;
+	margin-right: 20px;
+	border: solid 1px $gray;
+	border-radius: 8px;
+	transition: background-color 0.3s;
+}
+
+.search-engine-btn-container:hover {
+	cursor: pointer;
+	background-color: $light-gray;
+}
+
+.search-engine-btn {
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+.add-event-btn{
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	height: 30px;
+	padding: 10px;
+	border: solid 1px $gray;
+	border-radius: 8px;
+	background-color: $main-blue;
+	transition: background-color 0.3s;
+}
+
+.add-politic-btn{
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	margin-left: auto;
+	height: 30px;
+	padding: 10px;
+	border: solid 1px $gray;
+	border-radius: 8px;
+	background-color: $main-blue;
+	transition: background-color 0.3s;
+}
+
+.add-politic-btn:hover{
+	cursor: pointer;
+	background-color: $darker-blue;
+}
+
+.add-politic-btn>p, .add-event-btn>p{
+	font-size: 18px;
+}

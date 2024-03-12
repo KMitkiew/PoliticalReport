@@ -1,0 +1,50 @@
+.link {
+  text-decoration: none;
+}
+
+.section-title-container {
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-clip-path: inset(0px 0px -5px 0px);
+          clip-path: inset(0px 0px -5px 0px);
+}
+
+.politics-list {
+  height: 68.5vh;
+  min-height: 320px;
+  overflow: auto;
+}
+
+.observed-politic {
+  position: relative;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 5px 0 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.observed-politic:hover {
+  cursor: pointer;
+  background-color: #f7f7f7;
+}
+
+.politic-profile-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.delete-observation-btn {
+  padding: 5px 10px;
+  margin-left: auto;
+  margin-right: 30px;
+  border-radius: 8px;
+  background-color: #23eac6;
+  transition: background-color 0.3s;
+}
+
+.delete-observation-btn:hover {
+  cursor: pointer;
+  background-color: #20ba9e;
+}/*# sourceMappingURL=ObservedPolitics.css.map */

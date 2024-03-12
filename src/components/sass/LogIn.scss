@@ -1,0 +1,131 @@
+@use './utilities/index' as *;
+
+.link{
+    text-decoration: none;
+}
+
+.login{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: 85vh;
+    min-height: 500px;
+    width: 30vw;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px 20px 20px;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    background-color: $main-white-bg;
+}
+
+.logo-img{
+    margin-bottom: 25px;
+}
+
+.welcome-txt{
+    margin-bottom: 15px;
+    color: $main-blue;
+}
+
+.info-txt{
+    margin-bottom: 25px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.email-input, .password-input{
+    height: 50px;
+    width: 270px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border: 1px solid $dark-gray;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    background-color: $second-white-bg;
+}
+
+.email-input::placeholder, 
+.password-input::placeholder{
+        color: $dark-gray; 
+}
+
+.forgot-password{
+    margin-top: 10px;
+    position: relative;
+    left: 5px;
+    color: $main-blue;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.continue-btn{
+    align-self: center;
+    height: 50px;
+    width: 230px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    background-color: $main-blue;
+    color: $main-white-bg;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color .3s;
+}
+
+.continue-btn:hover{
+    cursor: pointer;
+    background-color: $darker-blue ;
+}
+
+.acount-register{
+    position: relative;
+    left: 5px;
+    align-self: flex-start;
+}
+
+.register-forwarding{
+    color: $main-blue;
+    font-weight: bold;
+}
+
+.register-forwarding:hover{
+    cursor: pointer;
+}
+
+.bad-value{
+    background-color: $light-red;
+    border: solid 1px $red;
+}
+
+.exit-btn{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    background-color: $main-white-bg;
+    transition: scale .3s;
+}
+
+.exit-btn:hover{
+    cursor: pointer;
+    scale: 1.2;
+}

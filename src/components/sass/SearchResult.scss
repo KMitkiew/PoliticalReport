@@ -1,0 +1,51 @@
+@use './utilities/index' as *;
+
+.link{
+    text-decoration: none;
+}
+
+.politic-profile {
+    // height: 135px;
+	display: flex;
+	align-items: center;
+	margin: 2px 0;
+    padding: 0 20px;
+    border-bottom: solid 1px $gray;
+	transition: background-color 0.2s;
+	z-index: -2;
+}
+
+.politic-profile:hover {
+	background-color: $light-gray;
+}
+
+.politic-profile-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    width: 110px;
+    margin: 0 45px 0 20px;
+    border-radius: 10px;
+}
+
+.politic-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.politic-data > p{
+    margin-bottom: 2px;
+}
+
+.politic-data > p:not(:first-child){
+    color: $dark-gray;
+}
+
+.politic-data > .politic-dignity {
+    font-size: 19px;
+	letter-spacing: 1px;
+    font-weight: bold;
+}
+

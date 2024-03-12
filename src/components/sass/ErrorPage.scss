@@ -1,0 +1,39 @@
+@use './utilities/index' as *;
+
+.link{
+    text-decoration: none;
+}
+
+.error-page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-number{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.error-number-info {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.return-home-btn{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: $main-blue;
+    transition: background-color .3s;
+}
+
+.return-home-btn:hover{
+    cursor: pointer;
+    background-color: $darker-blue;
+}

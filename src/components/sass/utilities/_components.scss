@@ -1,0 +1,18 @@
+.hide {
+	display: none;
+}
+
+.show {
+	display: flex;
+}
+
+.center{
+	position: relative;
+	left: 50%;
+	transform: translate(50%, 50%);
+	font-weight: bold;
+}
+
+.link{
+  text-decoration: none;
+}

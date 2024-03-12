@@ -1,0 +1,101 @@
+@charset "UTF-8";
+.link {
+  text-decoration: none;
+}
+
+.event-page {
+  position: absolute;
+  right: 0;
+  width: 60%;
+  height: 88%;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  padding: 42px 60px 10px 60px;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.top-line {
+  position: relative;
+  top: 6%;
+  height: 5px;
+  width: 90%;
+  align-self: center;
+  background-color: #23eac6;
+  z-index: -1;
+}
+
+.solidarity-percentage {
+  height: 70px;
+  width: 70px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 60px;
+}
+
+.date-of-occurance {
+  align-self: center;
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.short-description {
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.event-type {
+  margin-bottom: 10px;
+}
+
+.make-it-bold {
+  font-weight: bold;
+}
+
+.source-list {
+  list-style: none;
+}
+
+.source-list-el {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.source-list-el > a {
+  text-decoration: none;
+  color: black;
+}
+
+.center-icon {
+  position: relative;
+  top: 6px;
+  margin-right: 10px;
+}
+
+.reaction-container {
+  width: 100%;
+  margin-top: auto; /* Zmiana z margin-bottom na margin-top */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end; /* Dodane, aby umieścić na samym dole */
+}
+
+.like-btn {
+  margin-right: 80px;
+}
+
+.like-btn, .dislike-btn {
+  transition: scale 0.3s;
+}
+
+.like-btn:hover, .dislike-btn:hover {
+  cursor: pointer;
+  scale: 1.2;
+}/*# sourceMappingURL=EventPage.css.map */

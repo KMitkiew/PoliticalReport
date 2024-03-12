@@ -1,0 +1,55 @@
+.link {
+  text-decoration: none;
+}
+
+.delete-popup-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  background-color: rgba(94, 93, 93, 0.3);
+}
+
+.delete-popup {
+  position: absolute;
+  height: 180px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.delete-popup-info {
+  margin-bottom: 20px;
+}
+
+.delete-btns-container {
+  display: flex;
+}
+
+.accept-delete {
+  margin-right: 25px;
+}
+
+.reject-delete, .accept-delete {
+  height: 35px;
+  width: 80px;
+  border: solid 1px #d9d9d9;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.reject-delete:hover, .accept-delete:hover {
+  cursor: pointer;
+  background-color: #d9d9d9;
+}/*# sourceMappingURL=DeletePopup.css.map */

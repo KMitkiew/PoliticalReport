@@ -1,0 +1,173 @@
+@use './utilities/index' as *;
+
+.link{
+	text-decoration: none;
+}
+
+.politic-profile-component {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 88vh;
+	background-color: $main-white-bg;
+}
+
+.politic-profile-container {
+	flex: 1;
+	padding: 40px 70px;
+	display: flex;
+	background-color: $main-white-bg;
+}
+
+.politic-image {
+	height: 250px;
+	width: 200px;
+	object-fit: cover;
+	border-radius: 40px;
+}
+
+.politic-bio {
+	margin-left: 100px;
+}
+
+.politic-stats{
+	display: flex;
+	flex-direction: column;
+}
+
+.stats-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.observe-politic-btn{
+	height: 40px;
+	width: 200px;
+	margin-top: 10px;
+	align-self: center;
+	justify-self: center;
+	background-color: $main-blue;
+	border-radius: 8px;
+	font-size: 18px;
+	transition: background-color .3s;
+}
+
+.observe-politic-btn:hover{
+	cursor: pointer;
+	background-color: $darker-blue;
+}
+
+.politic-event-number {
+	margin-top: 20px;
+}
+
+.separator {
+	position: relative;
+	left: -2%;
+	height: 2px;
+	width: 104%;
+	border-top: 3px solid $main-blue;
+	border-radius: 3px;
+	margin: 10px 0px;
+}
+
+.politic-element {
+	display: flex;
+	align-items: center;
+	margin-left: 30px;
+}
+
+.politic-element::before {
+	content: '\2022';
+	width: 1em;
+	display: inline-block;
+	margin-left: -1em;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: $main-blue;
+}
+
+.timeline {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.arrow {
+	position: relative;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.arrow-line {
+	width: 100%;
+	align-self: center;
+	border-top: 5px solid $main-blue;
+}
+
+.arrow-head {
+	right: 5%;
+	width: 0;
+	height: 0;
+	z-index: 20;
+	border-style: solid;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 75px solid $main-blue;
+	border-right: 0;
+}
+
+.make-it-bold {
+	font-weight: bold;
+}
+
+.select-period {
+	height: 50px;
+	width: 20%;
+	min-width: 100px;
+	margin: 30px 0px;
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border: solid 2px $gray;
+	border-radius: 15px;
+	color: $main-blue;
+	background-color: $second-white-bg;
+}
+
+.change-period {
+	background-color: $second-white-bg;
+	padding: 5px;
+}
+
+.disabled{
+	color: $darker-gray;
+}
+
+.period{
+	font-size: 18px;
+	font-weight: bold;
+	color: $darker-gray;
+}
+
+.arrow-btn {
+	color: $main-blue;
+	transition: scale 0.3s;
+}
+
+.arrow-btn:hover {
+	cursor: pointer;
+	scale: 1.5;
+	color: $darker-blue;
+}
+
+p {
+	line-height: 1.6;
+}

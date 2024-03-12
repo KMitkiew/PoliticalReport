@@ -1,0 +1,106 @@
+@use './utilities/index' as *;
+
+.link{
+    text-decoration: none;
+}
+
+.comments-section{
+    position: fixed;
+    left: 0;
+    height: 88%;
+    width: 40%;
+    border-right: solid 1px $gray;
+    background-color: $second-white-bg;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.title-bar{
+    height: 80px;
+    width: 40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.comments-container{
+    position: relative;
+    height: calc(100% - 160px);
+	overflow: auto;
+	scrollbar-width: thin;
+    z-index: -2;
+    transition: height .3s;
+}
+
+.shrink-comments-container{
+    height: calc(100% - 280px);   
+}
+
+.comment-add{
+    position: fixed;
+    height: 80px;
+    width: 40%;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    border-top: solid 2px $gray;
+    border-right: solid 1px $gray;
+    background-color: $second-white-bg;
+    transition: height .3s;
+}
+
+.comment-profile-picture{
+    position: relative;
+    top: 0px;
+    height: 40px;
+    width: 40px;
+    margin-left: 30px;
+    border-radius: 40px;
+    transition: top .3s;
+    z-index: 10;
+}
+
+.comment-message{
+    height: 70%;
+    width: 80%;
+    padding: 20px 45px 20px 20px;
+    margin-left: 20px;
+    border: solid 1px $gray;
+    border-radius: 20px;
+    resize: none;
+    overflow: hidden;
+}
+
+.send-comment-btn{
+    position: relative;
+    top: 2px;
+    left: -40px;
+    height: 30px;
+    width: 30px;
+    background-color: $main-white-bg;
+}
+
+.send-comment-btn-icon{
+    color: $light-gray;
+    transition: transform .3s, color .3s;
+}
+
+.show-input{
+    height: 200px;
+}
+
+.show-input>img{
+    position: relative;
+    top: -50px;
+}
+
+.enabled-btn{
+    color: $darker-gray;
+}
+
+.enabled-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}

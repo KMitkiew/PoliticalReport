@@ -1,0 +1,9 @@
+@use './utilities/index' as *;
+
+.add-event{
+    position: relative;
+    height: 88vh;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}

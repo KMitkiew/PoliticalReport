@@ -1,0 +1,20 @@
+@use './utilities/index' as *;
+
+* {
+	box-sizing: border-box;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background-color: $second-white-bg;
+}
+
+body::before{
+	content: '';
+    height: 11vh;
+    min-height: 75px;
+    display: inline-block;
+}
